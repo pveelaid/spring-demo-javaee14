@@ -25,6 +25,6 @@ public class ReservationRestController {
     public List<Reservation> getAllReservations() {
         log.info("getting all reservations");
 
-        return reservationService.findAllReservation();
+        return reservationService.findAllReservations();
     }
 }
