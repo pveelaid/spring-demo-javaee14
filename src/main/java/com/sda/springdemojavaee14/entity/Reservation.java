@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Data
+@Data//provides methods, check show properties in project structure
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,5 +29,23 @@ public class Reservation {
     int numberOfPeople;
 
     String address;
-
 }
+
+  /*
+   // property - how it works in java
+   //property: firstName
+   //getter : getFirstname
+   //setter : setFirstname
+   //backing field: name
+   public String getFirstName() {
+        return name;
+    }
+
+    public void setFirstName(String firstName) {
+        this.name = name;
+    }
+
+
+    private String name;
+
+*/
