@@ -1,5 +1,8 @@
 package com.sda.springdemojavaee14.homework.annotation;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
         PersonWithAllSourceCode me = new PersonWithAllSourceCode();
@@ -23,5 +26,11 @@ public class Main {
                 .surname("Vii")
                 .name("Peeter")
                 .build();
+
+        //Set doesn't store duplicates
+        Set<PersonWithAllSourceCode> uniquePersons = new HashSet<>();
+        uniquePersons.add(me);
+        uniquePersons.add(anotherMe);
+        System.out.println("Set size after adding two equeal Persons: " + uniquePersons.size());
     }
 }
