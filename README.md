@@ -25,7 +25,7 @@
   - /reservations/add - for creating a reservation - with POST http method
   - /deletereservations vs /reservations/delete- for deleting reservations - with DELETE http method
   - /updatereservations vs /reservations/update - for updating reservations - with PUT http method
-- third proposal
+- third proposal - REST principles for good naming of resources
   - /reservations - GET - for Reading all resources (R from CRUD)
   - /reservations/{id} - GET - for Reading for one resource (R from CRUD)
   - /reservations - POST - for Creation (C from CRUD)
