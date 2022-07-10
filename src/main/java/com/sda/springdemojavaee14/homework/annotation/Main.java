@@ -15,5 +15,13 @@ public class Main {
 
         System.out.println("Are those two references the same object?: " + (me == anotherMe));
         System.out.println("Is this the same person? - " + me.equals(anotherMe));
+
+        Person meAgain = new Person("Peeter", "Vii", 29);
+        // Builder is better than allArgsConstructor - because you can see more
+        Person meAgainWithBuilder = Person.builder()
+                .age(29)
+                .surname("Vii")
+                .name("Peeter")
+                .build();
     }
 }
