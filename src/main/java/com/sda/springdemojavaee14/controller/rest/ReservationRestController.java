@@ -56,7 +56,7 @@ public class ReservationRestController {
                             .responseCode(404)
                             .timestamp(LocalDateTime.now())
                             .errorMessage("You provided wrong id: " + reservationId)
-                            .path("/reservations/" + reservationId)
+                            .path("/api/reservations/" + reservationId)
 //                            .path() // TODO: use URI class
                             .build()
             );
