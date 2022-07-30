@@ -38,4 +38,13 @@ public class ReservationWebController {
         return "reservations/all-reservations";
     }
 
+    //redirect set response status to 302 and location header on url of response
+    @GetMapping("/delete/{id}")
+    public String deleteReservation(@PathVariable("id") Long reservationId) {
+        // call the service
+        reservationService.deleteReservationById(reservationId);
+        return "redirect:/web/reservations";
+    }
+
+
 }
